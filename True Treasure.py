@@ -13,4 +13,4 @@ user_name = st.text_input("Tell your name", "")
 if user_name:
     st.write(f"Hello, **{user_name}** .")
 
-st.page_link("story1.py", label="New Game", icon="🆕")
+st.page_link("story1.py", label="New Game")
