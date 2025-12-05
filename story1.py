@@ -7,4 +7,7 @@ user_name = st.text_input("Tell your name", "")
 if user_name:
     st.write(f"Hello, **{user_name}**.")
 
-st.page_link("story2.py", label="New Game")
+if st.button("Game Start"):
+    st.write("{user_name} is a trasure hunter.")
+    st.write("To go adventure, the first thing {user_name} prepares is ...")
+    
