@@ -8,6 +8,5 @@ if user_name:
     st.write(f"Hello, **{user_name}**.")
 
 if st.button("Game Start"):
-    st.write("{user_name} is a trasure hunter.")
-    st.write("To go adventure, the first thing {user_name} prepares is ...")
-    
+    st.write(f"**{user_name}** is a trasure hunter.")
+    st.write(f"To go adventure, the first thing **{user_name}** prepares is ...")
