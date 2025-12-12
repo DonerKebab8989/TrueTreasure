@@ -11,7 +11,7 @@ if st.button("Game Start"):
     st.write(f"**{user_name}** is a trasure hunter.")
     q1 = st.radio(
         f"To go on an adventure, the first thing **{user_name}** prepares is ...",
-        ["Treasure map :🗺️:", "Companions :🧑‍🤝‍🧑:", "Equipments :🔦:", "Provisions :🍎:"],
+        ["Treasure map 🗺️", "Companions 🧑‍🤝‍🧑", "Equipments 🔦", "Provisions 🍎"],
         index=None
     )
     if q1 is not None:
