@@ -1,0 +1,71 @@
+body {
+    background-color: #0d1117; /* ダークテーマの背景色 */
+    color: #c9d1d9; /* 明るいテキスト色 */
+    font-family: 'Georgia', serif; /* 冒険的なフォント */
+}
+
+/* メインコンテナのスタイル */
+.main {
+    background-color: #161b22; /* メインエリアの背景色を少し濃く */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ヘッダーのスタイル */
+h1 {
+    color: #ff9900; /* ゴールド系の色 */
+    text-align: center;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ストーリーテキストのスタイル */
+.stMarkdown p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ボタンのスタイル */
+.stButton>button {
+    background-color: #238636; /* 緑色のボタン */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%; /* 幅をフルに */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.stButton>button:hover {
+    background-color: #2ea043; /* ホバーで少し明るく */
+    transform: translateY(-2px);
+}
+
+/* スコア表示のスタイル */
+.score-card {
+    background-color: #21262d; /* スコア背景色 */
+    border-left: 5px solid #ff9900;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.0em;
+}
+
+/* エンディングタイトルのスタイル */
+h2 {
+    color: #ff9900;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
