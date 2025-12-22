@@ -10,12 +10,13 @@ st.set_page_config(
 )
 
 # CSSの読み込み
+# setting.py 内の修正案
 def local_css(file_name):
-    """ローカルのCSSファイルを読み込む関数"""
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-local_css("style.css") # style.cssのファイルを指定
+    try:
+        with open(file_name) as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except FileNotFoundError:
+        st.error(f"{file_name} not found. Please check if the file exists.")
 
 
 # --- ゲームの状態初期化 ---
